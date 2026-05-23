@@ -1,0 +1,22 @@
+{
+  "name": "jv-patcher",
+  "version": "1.0.0",
+  "description": "Instant MP4 → 60 FPS atom patcher. No FFmpeg. No re-encoding.",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve public -p 3000",
+    "preview": "npx serve public -p 3000",
+    "deploy:cf": "npx wrangler pages deploy public --project-name=jv-patcher",
+    "deploy:netlify": "npx netlify-cli deploy --prod --dir=public"
+  },
+  "devDependencies": {
+    "serve": "^14.2.3",
+    "wrangler": "^3.0.0",
+    "netlify-cli": "^17.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["mp4", "60fps", "patcher", "atom", "video"],
+  "license": "MIT"
+}

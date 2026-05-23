@@ -1,0 +1,17 @@
+# wrangler.toml — Cloudflare Pages configuration
+# Docs: https://developers.cloudflare.com/pages/
+
+name = "jv-patcher"
+compatibility_date = "2024-01-01"
+
+[site]
+bucket = "./public"
+
+# Pages build config (used by Cloudflare dashboard / CI)
+[build]
+command = ""           # No build step — pure static site
+output_dir = "public"
+
+# Optional: environment-specific settings
+[env.production]
+name = "jv-patcher"
